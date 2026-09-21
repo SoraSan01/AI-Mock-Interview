@@ -7,7 +7,7 @@ function PublicLayout(){
     <div className="min-h-screen flex flex-col bg-white">
             <Navbar/>
                 <main className="flex-1 
-                        flex flex-col m-5">
+                        flex flex-col m-5 ">
                         <Outlet/>
                 </main>
             <Footer/>
