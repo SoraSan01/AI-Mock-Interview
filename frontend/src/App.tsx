@@ -1,13 +1,19 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Login from './pages/Login'
+import PublicLayout from './layout/publicLayout'
+import Home from './pages/Home'
 
 function App() {
-
   return (
-    
-    <section id="center" className= "text-white">
-        <h2 className="text-black text-center">AI-MOCK-INTERVIEW</h2>
-    </section>
-        
+    <Routes>
+      <Route element={<PublicLayout/>}>
+         <Route path="/" element={<Home />} />
+         <Route path="/feature" element={<Login />} />
+         <Route path="/practice" element={<Login />} />
+         <Route path="/login" element={<Login />} />
+      </Route>
+    </Routes>
   )
 }
 
